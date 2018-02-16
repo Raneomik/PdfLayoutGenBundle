@@ -1,0 +1,30 @@
+{
+    "name" : "ramik/PdfLayoutGenBundle",
+    "description" : "Pdf layout generation via interactive forms",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "ramik",
+        "email" : "manec@smile.fr"
+    }],
+    "keywords" : [
+        "Pdf layout generation bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-4" : {
+          "Ramik\\PdfLayoutGenBundle\\": ""
+        }
+    },
+    "target-dir" : "ramik/PdfLayoutGenBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "0.1-dev"
+        }
+    }
+}
