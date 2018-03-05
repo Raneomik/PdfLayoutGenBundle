@@ -1,0 +1,4 @@
+pdf_layout_gen:
+    resource: "@PdfLayoutGenBundle/Controller/"
+    type:     annotation
+    prefix:   /
