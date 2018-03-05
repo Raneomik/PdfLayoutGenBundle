@@ -12,6 +12,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('PdfLayoutGenBundle:Default:index.html.twig');
+        return $this->render('@PdfLayoutGen/Default/index.html.twig');
     }
 }
