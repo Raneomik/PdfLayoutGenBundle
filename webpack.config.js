@@ -1,3 +1,4 @@
+
 var Encore = require('@symfony/webpack-encore');
 
 Encore
@@ -24,9 +25,12 @@ Encore
     jQuery: 'jquery'
   })
 
-  .createSharedEntry('vendor', ['jquery', 'bootstrap-sass', 'interactjs'])
+  .createSharedEntry('vendor', ['jquery', 'bootstrap-sass',
+    './src/Ramik/PdfLayoutGenBundle/node_modules/interactjs',
+  ])
   // .enableSourceMaps(!Encore.isProduction())
   .addEntry('app', [
+    './src/Ramik/PdfLayoutGenBundle/Resources/public/js/collection.js',
     './src/Ramik/PdfLayoutGenBundle/Resources/public/js/interact.js',
     './src/Ramik/PdfLayoutGenBundle/Resources/public/sass/main.scss'
   ])
