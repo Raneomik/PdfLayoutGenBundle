@@ -1,0 +1,10 @@
+{% block coordinates_widget %}
+    {% spaceless %}
+            <div {{ block('widget_container_attributes') }}>
+                {{ form_widget(form) }}
+                    <div id="drag-1" class="draggable">
+                        <p> You can drag one element </p>
+                    </div>
+            </div>
+    {% endspaceless %}
+{% endblock %}

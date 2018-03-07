@@ -20,8 +20,6 @@
         }
     },
     "target-dir" : "Ramik/PdfLayoutGenBundle",
-    "repositories" : [{
-    }],
     "extra" : {
     "branch-alias" : {
             "dev-master" : "0.1-dev"

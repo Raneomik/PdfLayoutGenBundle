@@ -1,0 +1,11 @@
+
+{% macro widget_prototype(widget, text) %}
+    {% set name = widget.vars.name %}
+
+    <div data-content="{{ name }}">
+        {{ form_widget(widget) }}
+        <a class="btn btn-remove btn-danger" data-related="{{ name }}">
+            <span class="glyphicon glyphicon-minus"></span>
+        </a>
+    </div>
+{% endmacro %}

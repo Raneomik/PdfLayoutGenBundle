@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% import '@PdfLayoutGen/PdfLayout/pdf_layout_field.html.twig' as collection %}
+
+{% block body %}
+
+    <div class="container">
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+    <fieldset>
+        <legend>New Layout</legend>
+
+        <div id="post_fields" data-prototype="{{ collection.widget_prototype(form.fields.vars.prototype,'Remove field')|e }}">
+            {% for widget in form.fields %}
+                {{ collection.widget_prototype(widget,'Remove field') }}
+            {% endfor %}
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="field_type">
+                {% for index, type in field_types %}
+                    <option value="{{ index }}">{{ type }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <a class="btn btn-add btn-primary" data-target="post_fields">Add Field
+            <span class="glyphicon glyphicon-plus"></span>
+        </a>
+    </fieldset>
+
+    {{ form_end(form) }}
+</div>
+{% endblock %}
