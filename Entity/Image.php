@@ -6,8 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Image
- *
+ * @ORM\Entity
+ * @ORM\Table(name="field_image")
  */
 class Image extends Field
 {
@@ -30,7 +30,7 @@ class Image extends Field
 
     public function getType()
     {
-        return parent::getAvailableTypes()['Image'];
+        return 'image';
     }
 }
 

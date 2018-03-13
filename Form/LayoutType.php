@@ -14,12 +14,13 @@ class LayoutType extends AbstractType
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('fields', CollectionType::class, [
+        $builder
+            ->add('title')
+            ->add('fields', CollectionType::class, [
             'entry_type' => FieldType::class,
             'allow_add' => true,
             'allow_delete' => true,
             'prototype' => true,
-            'by_reference' => false,
             'prototype_name' => 'field__name__',
             'entry_options' => array(
                 // options on the rendered TagTypes

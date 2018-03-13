@@ -5,15 +5,15 @@ namespace Ramik\PdfLayoutGenBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Paragraph
+ * Line
  * @ORM\Entity
- * @ORM\Table(name="field_paragraph")
+ * @ORM\Table(name="field_link")
  */
-class Paragraph extends Field
+class Link extends Field
 {
     /**
      * @ORM\Column(type="string")
-     */
+    */
     private $content;
 
     /**
@@ -31,9 +31,9 @@ class Paragraph extends Field
     {
         $this->content = $content;
     }
-    
+
     public function getType(){
-        return parent::getAvailableTypes()['PARAGRAPH'];
+        return 'link';
     }
 }
 
