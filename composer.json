@@ -13,7 +13,7 @@
         "MIT"
     ],
     "require" : {
-        "vich/uploader-bundle": "^1.6"
+        "vich/uploader-bundle": "^1.4"
     },
     "autoload" : {
         "psr-4" : {
