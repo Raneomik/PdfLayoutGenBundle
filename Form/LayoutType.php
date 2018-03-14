@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Form;
+namespace Raneomik\PdfLayoutGenBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ButtonType;
@@ -35,7 +35,7 @@ class LayoutType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Ramik\PdfLayoutGenBundle\Entity\Layout'
+            'data_class' => 'Raneomik\PdfLayoutGenBundle\Entity\Layout'
         ));
     }
 
@@ -44,7 +44,7 @@ class LayoutType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'ramik_pdflayoutgenbundle_layout';
+        return 'Raneomik_pdflayoutgenbundle_layout';
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Form;
+namespace Raneomik\PdfLayoutGenBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -24,7 +24,7 @@ class FieldType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Ramik\PdfLayoutGenBundle\Entity\Field'
+            'data_class' => 'Raneomik\PdfLayoutGenBundle\Entity\Field'
         ));
     }
 
@@ -33,7 +33,7 @@ class FieldType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'ramik_pdflayoutgenbundle_field';
+        return 'Raneomik_pdflayoutgenbundle_field';
     }
 
     public function getName()

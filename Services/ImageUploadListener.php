@@ -1,8 +1,8 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Services;
+namespace Raneomik\PdfLayoutGenBundle\Services;
 
-use Ramik\PdfLayoutGenBundle\Entity\Image;
+use Raneomik\PdfLayoutGenBundle\Entity\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\PreUpdateEventArgs;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Services;
+namespace Raneomik\PdfLayoutGenBundle\Services;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

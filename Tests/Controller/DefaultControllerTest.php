@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Tests\Controller;
+namespace Raneomik\PdfLayoutGenBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

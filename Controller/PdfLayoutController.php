@@ -1,12 +1,12 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Controller;
+namespace Raneomik\PdfLayoutGenBundle\Controller;
 
-use Ramik\PdfLayoutGenBundle\Form\LayoutType;
-use Ramik\PdfLayoutGenBundle\Entity\Layout;
-use Ramik\PdfLayoutGenBundle\Entity\Line;
-use Ramik\PdfLayoutGenBundle\Entity\Field;
-use Ramik\PdfLayoutGenBundle\Entity\Paragraph;
+use Raneomik\PdfLayoutGenBundle\Form\LayoutType;
+use Raneomik\PdfLayoutGenBundle\Entity\Layout;
+use Raneomik\PdfLayoutGenBundle\Entity\Line;
+use Raneomik\PdfLayoutGenBundle\Entity\Field;
+use Raneomik\PdfLayoutGenBundle\Entity\Paragraph;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,7 +23,7 @@ class PdfLayoutController extends Controller
     }
 
     /**
-     * @Route("/create")
+     * @Route("/create-pdf")
      */
     public function createAction(Request $request)
     {

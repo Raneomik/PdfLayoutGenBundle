@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle;
+namespace Raneomik\PdfLayoutGenBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

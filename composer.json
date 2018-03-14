@@ -1,9 +1,9 @@
 {
-    "name" : "Ramik/PdfLayoutGenBundle",
+    "name" : "Raneomik/PdfLayoutGenBundle",
     "description" : "Pdf layout generation via interactive forms",
     "type" : "symfony-bundle",
     "authors" : [{
-        "name" : "ramik",
+        "name" : "raneomik",
         "email" : "manec@smile.fr"
     }],
     "keywords" : [
@@ -17,10 +17,10 @@
     },
     "autoload" : {
         "psr-4" : {
-          "Ramik\\PdfLayoutGenBundle\\": ""
+          "Raneomik\\PdfLayoutGenBundle\\": ""
         }
     },
-    "target-dir" : "Ramik/PdfLayoutGenBundle",
+    "target-dir" : "Raneomik/PdfLayoutGenBundle",
     "extra" : {
     "branch-alias" : {
             "dev-master" : "0.1-dev"

@@ -1,23 +1,23 @@
 services:
 #    pdf_layout_gen.example:
-#        class: Ramik\PdfLayoutGenBundle\Example
+#        class: Raneomik\PdfLayoutGenBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
 
     pdf_layout_gen.form.type.field:
-        class: Ramik\PdfLayoutGenBundle\Form\FieldType
+        class: Raneomik\PdfLayoutGenBundle\Form\FieldType
         tags:
             - { name: Form.type, alias: field }
 
     pdf_layout_gen.handle_type:
-        class: Ramik\PdfLayoutGenBundle\Services\TypeHandler
+        class: Raneomik\PdfLayoutGenBundle\Services\TypeHandler
         arguments: [ "@templating" , "@Form.factory" ]
 
     pdf_layout_gen.image_uploader:
-        class: Ramik\PdfLayoutGenBundle\Services\ImageUpload
+        class: Raneomik\PdfLayoutGenBundle\Services\ImageUpload
         arguments: ['%images_directory%']
 
     pdf_layout_gen.doctrine_image_listener:
-        class: Ramik\PdfLayoutGenBundle\Services\ImageUploadListener
+        class: Raneomik\PdfLayoutGenBundle\Services\ImageUploadListener
         arguments: ['@pdf_layout_gen.image_uploader']
         tags:
             - { name: doctrine.event_listener, event: prePersist }

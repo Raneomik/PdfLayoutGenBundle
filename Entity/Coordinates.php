@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Entity;
+namespace Raneomik\PdfLayoutGenBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

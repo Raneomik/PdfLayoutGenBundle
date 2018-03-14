@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Form;
+namespace Raneomik\PdfLayoutGenBundle\Form;
 
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -24,7 +24,7 @@ class LineType extends FieldType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Ramik\PdfLayoutGenBundle\Entity\Line'
+            'data_class' => 'Raneomik\PdfLayoutGenBundle\Entity\Line'
         ));
     }
 
@@ -33,7 +33,7 @@ class LineType extends FieldType
      */
     public function getBlockPrefix()
     {
-        return 'ramik_pdflayoutgenbundle_line';
+        return 'Raneomik_pdflayoutgenbundle_line';
     }
 
     public function getName()

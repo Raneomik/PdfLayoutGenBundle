@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramik\PdfLayoutGenBundle\Form;
+namespace Raneomik\PdfLayoutGenBundle\Form;
 
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
@@ -27,7 +27,7 @@ class ImageType extends FieldType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Ramik\PdfLayoutGenBundle\Entity\Image'
+            'data_class' => 'Raneomik\PdfLayoutGenBundle\Entity\Image'
         ));
     }
 
@@ -36,7 +36,7 @@ class ImageType extends FieldType
      */
     public function getBlockPrefix()
     {
-        return 'ramik_pdflayoutgenbundle_image';
+        return 'Raneomik_pdflayoutgenbundle_image';
     }
 
     public function getName()
