@@ -20,7 +20,6 @@
           "Raneomik\\PdfLayoutGenBundle\\": ""
         }
     },
-    "target-dir" : "Raneomik/PdfLayoutGenBundle",
     "extra" : {
     "branch-alias" : {
             "dev-master" : "0.1-dev"
