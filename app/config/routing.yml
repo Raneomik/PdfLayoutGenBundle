@@ -2,3 +2,8 @@ pdf_layout_gen:
     resource: "@PdfLayoutGenBundle/Controller/"
     type:     annotation
     prefix:   /
+
+default_controller:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    prefix:   /
