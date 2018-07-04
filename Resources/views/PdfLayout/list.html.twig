@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   <div>
+       <ul>
+       {% for item in pdf_layouts %}
+                <li><a>{{ item.title }}</a>
+                    <a href="{{ path('layout_delete',  { 'id' : item.id}) }}" class="btn btn-remove btn-danger">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </a>
+           </li>
+       {% endfor %}
+       </ul>
+   </div>
+
+{% endblock %}

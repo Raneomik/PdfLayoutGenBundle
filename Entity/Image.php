@@ -3,30 +3,53 @@
 namespace Raneomik\PdfLayoutGenBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Validator\Constraints as Assert;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="field_image")
+ * @Vich\Uploadable
  */
 class Image extends Field
 {
-    /* @ORM\Column(type="string")
-     * @Assert\File(mimeTypes={ "image/jpeg", "image/png", "image/gf" })
+    /**
+     * @Vich\UploadableField(mapping="pdf_images", fileNameProperty="image")
+     * @var File
      */
-    private $image;
+    private $imageFile;
 
-    public function getImage()
+    /**
+     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+    /**
+     * @return File
+     */
+    public function getImageFile()
     {
-        return $this->image;
+        return $this->imageFile;
     }
 
-    public function setImage($image)
+    /**
+     * @param File $image
+     * @internal param File $imageFile
+     */
+    public function setImageFile( File $image = null )
     {
-        $this->image = $image;
+        $this->imageFile = $image;
 
-        return $this;
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
     }
+
+
 
     public function getType()
     {
